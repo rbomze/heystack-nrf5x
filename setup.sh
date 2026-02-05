@@ -33,7 +33,7 @@ unzip -q nRF5_SDK_15.3.0_59ac345.zip -d nrf-sdk
 sed -i.bak 's|GNU_INSTALL_ROOT := .*|GNU_INSTALL_ROOT := ../../nrf-sdk/gcc-arm-none-eabi-6-2017-q2-update|' \
 nrf-sdk/nRF5_SDK_12.3.0_d7731ad/components/toolchain/gcc/Makefile.posix
 
-sed -i.bak 's|GNU_INSTALL_ROOT := .*|GNU_INSTALL_ROOT := ../../nrf-sdk/gcc-arm-none-eabi-6-2017-q2-update|' \
+sed -i.bak 's|GNU_INSTALL_ROOT ?= .*|GNU_INSTALL_ROOT := ../../nrf-sdk/gcc-arm-none-eabi-6-2017-q2-update|' \
 nrf-sdk/nRF5_SDK_15.3.0_59ac345/components/toolchain/gcc/Makefile.posix
 
 echo ">>> Installing Nordic nRF Command Line Tools (v10.24.2)..."
