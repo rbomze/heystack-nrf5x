@@ -1,7 +1,7 @@
 /nrf-sdk
 /release
 /venv
-/output
+output
 
 ram.bin
 _build/
